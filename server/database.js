@@ -1,6 +1,7 @@
 const { MongoClient } = require('mongodb');
+require('dotenv').config;
 
-const uri = 'mongodb+srv://maazmalik2004:abenzene1234@dspace.odk45.mongodb.net/'; // Change as needed
+const uri = process.env.MONGO_URI; // Change as needed
 const dbName = 'rakshasetu';
 const collectionName = 'users';
 

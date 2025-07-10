@@ -9,7 +9,7 @@ const router = express.Router();
 const JWT_SECRET = 'your-secret-key'; // Replace with env var in production
 
 // Connect to MongoDB (ideally do this once in server.js)
-mongoose.connect('mongodb+srv://maazmalik2004:abenzene1234@dspace.odk45.mongodb.net/rakshasetu', {
+mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => console.log('Connected to MongoDB'))
