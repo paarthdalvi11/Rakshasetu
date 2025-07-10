@@ -1,0 +1,8 @@
+{
+    "userId":null,
+    "userName":null,
+    "location":null,
+    "trustScore":null,
+    "locationAccessTo":[],
+    "aadharVerified":false
+}
